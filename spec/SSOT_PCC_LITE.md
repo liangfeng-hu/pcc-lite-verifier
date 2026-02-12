@@ -1,5 +1,7 @@
 # SSOT | PCC-Lite (Two Anchors + Minimal Coverage) | Hackathon Release v0.1
 
+Repo: https://github.com/liangfeng-hu/pcc-lite-verifier
+
 This SSOT defines a minimal, verifiable, fail-closed protocol for gating high-risk / external actions.
 
 ## 0) Frozen scope (minimal complete)
