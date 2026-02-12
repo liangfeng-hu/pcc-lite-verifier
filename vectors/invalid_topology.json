@@ -1,0 +1,58 @@
+{
+  "proposal_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "action_class": "EXTERNAL",
+  "energy_est_uj": 100000,
+  "witness_hash": "AUTO",
+  "tcc": {
+    "tcc_version": "v0.1",
+    "epoch": 1,
+    "nonce": 2,
+    "root": "n1",
+    "receipt": "n4",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "IntentAnchor",
+        "payload": {
+          "h_constitution": "1111111111111111111111111111111111111111111111111111111111111111",
+          "h_energy_policy": "2222222222222222222222222222222222222222222222222222222222222222",
+          "action_class": "EXTERNAL"
+        }
+      },
+      {
+        "id": "n2",
+        "type": "GateVector",
+        "payload": {
+          "gate_outputs": [
+            {"gate_id": "G_TOPO", "output": 0},
+            {"gate_id": "G_TARGETREF", "output": 0},
+            {"gate_id": "G_ANCHOR_CONST", "output": 0},
+            {"gate_id": "G_ANCHOR_ENERGY", "output": 0},
+            {"gate_id": "G_BUDGET", "output": 0}
+          ]
+        }
+      },
+      {
+        "id": "n3",
+        "type": "TargetRef",
+        "payload": {
+          "target_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      },
+      {
+        "id": "n4",
+        "type": "ReceiptBCS",
+        "payload": {
+          "allow": true,
+          "receipt_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      }
+    ],
+    "edges": [
+      {"from": "n1", "to": "n2"},
+      {"from": "n2", "to": "n3"},
+      {"from": "n3", "to": "n2"},
+      {"from": "n3", "to": "n4"}
+    ]
+  }
+}
