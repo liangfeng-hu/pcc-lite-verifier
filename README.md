@@ -1,6 +1,8 @@
-# YFCore PCC-Lite Verifier (Open-Verifier)
+# PCC-Lite Verifier (Open-Verifier)
 
-YFCore PCC-Lite is a proof-carrying “constitution gate” demo: high-risk action requests must carry a verifiable TCC DAG closure anchored to:
+Repo: https://github.com/liangfeng-hu/pcc-lite-verifier
+
+PCC-Lite is a proof-carrying “constitution gate” demo: high-risk action requests must carry a verifiable TCC DAG closure anchored to:
 - constitution snapshot hash (h_constitution)
 - energy policy snapshot hash (h_energy_policy)
 
@@ -20,6 +22,10 @@ Outputs:
 - out/ledger_seal.jsonl
 - out/summary.json
 
+Expected summary:
+- OK=1
+- FAIL=7
+
 ## Open-Verifier / Closed-Builder
 
 This repo intentionally publishes:
@@ -33,5 +39,6 @@ This repo intentionally does NOT publish:
 - energy policy details (only snapshot hash + demo budgets)
 - proof package Builder (generator)
 
-Author: Liangfeng Hu
+Author: Liangfeng Hu (胡良锋)
 Company: YFCore Technology Limited (Hong Kong)
+Contact: fenghu949@gmail.com
