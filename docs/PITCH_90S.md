@@ -1,5 +1,7 @@
 # PCC-Lite (90-second pitch)
 
+Repo: https://github.com/liangfeng-hu/pcc-lite-verifier
+
 1) Pain (10s)
 AI risk is not only “wrong text” — it is untrusted world effects (API calls, transactions, device control).
 
@@ -8,7 +10,9 @@ PCC-Lite: actions must carry a proof package (TCC DAG) anchored to constitution 
 Verifier is blind, deterministic, fail-closed.
 
 3) Live evidence (40s)
-Run vectors:
+Run:
+python src/run_vectors.py
+
 - clean_path -> RECEIPT
 - change 1 char in target -> missing_or_invalid_targetref
 - create a cycle -> invalid_tcc_topology
