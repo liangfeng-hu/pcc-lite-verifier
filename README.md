@@ -1,6 +1,6 @@
-# PCC-Lite Verifier (Open-Verifier)
+# YFCore PCC-Lite Verifier (Open-Verifier)
 
-PCC-Lite is a proof-carrying “constitution gate” demo: high-risk action requests must carry a verifiable TCC DAG closure anchored to:
+YFCore PCC-Lite is a proof-carrying “constitution gate” demo: high-risk action requests must carry a verifiable TCC DAG closure anchored to:
 - constitution snapshot hash (h_constitution)
 - energy policy snapshot hash (h_energy_policy)
 
