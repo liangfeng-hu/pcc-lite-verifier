@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "tests": {
+    "auto_inferred": false,
+    "commands": [
+      [
+        "python",
+        "src/run_vectors.py"
+      ]
+    ],
+    "timeout_seconds": 900
+  },
+  "completion": {
+    "require": [
+      "tests_passed",
+      "git_diff_recorded"
+    ]
+  },
+  "hooks": {
+    "stop_gate": true,
+    "max_blocks_per_revision": 2
+  }
+}
